@@ -1,0 +1,171 @@
+/* 
+body  {
+  background-color: grey;
+}
+
+*/
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Poppins|Roboto&display=swap');
+
+*{box-sizing: border-box;}  
+
+body { 
+  background-color: white;
+}
+
+.product {
+  width: 100%;
+  padding: 0;
+  margin: 0;  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 1em;
+}
+
+.supreme-shirts {
+  width: 100%;
+  padding: 0;
+  margin: 0;  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 1em;
+}
+
+article {
+  padding: 1em;
+  margin: 0;
+}
+
+
+.shoes  {
+  width: 100%;
+  border: solid;
+}
+
+.supreme  {
+  width: 100%;
+  border: solid;
+}
+
+h1  {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 5em;
+  margin: auto;
+}
+
+
+h2 {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  background-color: white;
+  padding: 1em;
+}
+
+h3  {
+  font-size: 2em;
+  /*border: solid;*/
+  background-color: yellow;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+p {
+  font-size: 1em;
+  font-family: 'Poppins', sans-serif;
+}
+
+.menu-list  {
+  /*background-color: gold;*/
+  list-style: none;
+  padding: 0em;
+  margin: 0em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  /*display: inline-block;*/
+}
+
+.main-menu  {
+  display: inline-block;
+  justify-content: center;
+  margin: 0.5em;
+}
+
+li  {
+  flex: 1;
+  list-style: none;
+  display: inline;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  clear: both;
+  display:block;
+  padding:20px;
+  text-align: center;
+  color: black;
+}
+
+footer a {
+  margin:0; 
+  padding:0;
+  clear:both; 
+}
+
+/*
+.terms  {
+}
+
+.terms-con  {
+  background-color: #99ff00;
+  color: black;
+}
+
+.privacypol {
+  background-color: #99ff00;
+  color: black; 
+}
+
+
+.copyright  {
+  
+}
+
+.socials  {
+  
+}
+
+.insta  {
+  color: purple;
+}
+
+.faceb  {
+  color: navy;
+}
+
+.twt  {
+  color: lightskyblue;
+}
+*/
+
+/*
+
+.buy  {
+  background-color: white;
+  color: black;
+  margin: 1em;
+  padding: 1em;
+  text-align: center;
+}
+
+*/

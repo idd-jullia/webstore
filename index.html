@@ -1,354 +1,226 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Document title]</title>
-    <meta name="description" content="[A short description]">
-    <meta name="author" content="[Your Name]">
-    <link rel="stylesheet" href="css/reset.css"> <!-- You may change this "Reset" to "Normalize" if preferred -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="css/index.css">
-  </head>
-  <body>
-    <header>
-      <!-- Site logo, replace with your own -->
-      <a href="index.html"><img src="img/logo.svg" alt="HTML Logo (replace this)"></a>
 
-      <!-- Navigation menu and toggle button (non-functional) -->
-      <nav aria-label="Primary">
-        <button type="button">
-          <span class="material-icons">menu</span>
-        </button>
-        <ul>
-          <li><a href="#">Category</a>
-            <ul>
-              <li><a href="#">Subcategory</a></li>
-              <li><a href="#">Subcategory</a></li>
-              <li><a href="#">Subcategory</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Category</a></li>
-          <li><a href="#">Category</a></li>
-          <li><a href="#">Category</a></li>
-        </ul>
-      </nav>
+<head>
+  <meta charset="utf-8">
+  <title>zero</title>
+  <meta name="description" content="A short description">
+  <meta name="author" content="Your Name">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/zeroshoes.css">
 
-      <!-- Search for a product (non-functional) -->
-      <form>
-        <label>Search
-          <input type="search" name="find" id="find">
-        </label>
-        <button type="button"><span class="material-icons">search</span></button>
-      </form>
+</head>
 
-      <!-- Additional nav links -->
+<body>
+  <header>
+    <h1>zero collection</h1>
 
-      <ul>
-        <li><a href="#"><span class="material-icons">favorite_border</span></a></li>
-        <li><a href="#"><span class="material-icons">shopping_cart</span></a></li>
+    <nav>
+      <ul class="menu-list">
+        <li><a href="#" class="main-menu">Shoes</a></li>
+        <li><a href="#" class="main-menu">Clothes</a></li>
+        <li><a href="#" class="main-menu">Accessories</a></li>
+        <li><a href="#" class="main-menu">Prints</a></li>
+        </li>
       </ul>
-    </header>
+    </nav>
+  </header>
 
-    <main>
-      <header>
-        <h1>Sale on [Category Name]</h1>
+ <!-- 
+<main class="product" id="product">
+  <article class="shoe one" id="product">
+      <img src="img/first-class-flight.jpg" alt="Product Image" class="shoes">
+      <h2>Air Jordan 1 First Class Flight</h2>
+      <h3 id="price">$205.00</h3>
+        <p id="description"> Instead of picking a specific memory, outfit, or quote from MJ, the “First Class Flight” opts for a white/yellow colorway equipped with boarding-pass style barcodes and embellishments that anyone who’s traveled by air is sure to be familiar with.</p>
+  </article>
 
-        <!-- Filtering product form -->
-        <form>
-          <h2>Filters</h2>
-          <fieldset>
-            <label for="sort">Show</label>
-            <select name="sort" id="sort">
-              <option value="price-high">Price, highest to lowest</option>
-              <option value="price-low">Price, lowest to highest</option>
-              <option value="newest">Newest releases</option>
-            </select>
-          </fieldset>
-          <fieldset>
-            <legend>Colour</legend>
-            <ul>
-              <li><input type="checkbox" name="colour" value="black" id="black"> <label for="black">Black</label></li>
-              <li><input type="checkbox" name="colour" value="white" id="white"> <label for="white">White</label></li>
-              <li><input type="checkbox" name="colour" value="grey" id="grey"> <label for="grey">Grey</label></li>
-              <li><input type="checkbox" name="colour" value="red" id="red"> <label for="red">Red</label></li>
-              <li><input type="checkbox" name="colour" value="blue" id="blue"> <label for="blue">Blue</label></li>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <legend>Sizes</legend>
-            <ol>
-              <li><input type="checkbox" name="size" value="xs" id="xs"> <label for="xs">XS</label></li>
-              <li><input type="checkbox" name="size" value="sm" id="sm"> <label for="sm">S</label></li>
-              <li><input type="checkbox" name="size" value="md" id="md"> <label for="md">M</label></li>
-              <li><input type="checkbox" name="size" value="lg" id="lg"> <label for="lg">L</label></li>
-              <li><input type="checkbox" name="size" value="xl" id="xl"> <label for="xl">XL</label></li>
-            </ol>
-          </fieldset>
-          <fieldset>
-            <legend>Ratings (above)</legend>
-            <ol>
-              <li>
-                <input type="radio" name="rating" value="4" id="aboveFour">
-                <label for="aboveFour">
-                  <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_border</span>
-                </label>
-              </li>
-              <li>
-                <input type="radio" name="rating" value="3" id="aboveThree">
-                <label for="aboveThree">
-                  <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span>
-                </label>
-              </li>
-              <li>
-                <input type="radio" name="rating" value="2" id="aboveTwo">
-                <label for="aboveTwo">
-                  <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span>
-                </label>
-              </li>
-              <li>
-                <input type="radio" name="rating" value="1" id="aboveOne">
-                <label for="aboveOne">
-                  <span class="material-icons">star</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span><span class="material-icons">star_border</span>
-                </label>
-              </li>
-            </ol>
-          </fieldset>
-        </form>
-      </header>
+  <article class="shoe two" id="product">
+      <img src="img/og-gs.jpg" alt="Product Image" class="shoes">
+      <h2>Air Jordan 1 Retro High Black Crimson Tint (GS)</h2>
+      <h3 id="price">$227.00</h3>
+      <p id="description"> The Air Jordan 1 High OG GS “Crimson Tint” is the grade school kids version of the popular colorway. Released in early 2019, the Air Jordan 1 adds a coral pink “Crimson Tint” hue to the two-tone color blocking seen on classic looks like the “Bred” and “Royal” colorways.</p>
+  </article>
 
-      <section>
-        <h2>Results</h2>
+  <article class="shoe thr" id="product">
+      <img src="img/phantom.jpg" alt="Product Image" class="shoes">
+      <h2>Air Jordan 1 Retro High OG "Phantom" GS</h2>
+      <h3 id="price">$266.00</h3>
+      <p id="description"> The Air Jordan 1 High GS “Phantom” is the grade school children’s sizing of the 2019 colorway. The unique construction for the iconic silhouette features a crinkled leather base in Sail with light grey Phantom overlays in leather and University Red accents. </p>
+  </article>
 
-        <div id="products">
-          <!-- Product 1 -->
-          <article class="product">
-            <header>
-              <img src="img/product.jpg" alt="Product Image">
-            </header>
-            <h3>Product Name</h3>
-            <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-            <form>
-              <fieldset>
-                <legend>Colours</legend>
-                <ul>
-                  <li><label><input type="radio" name="colour" value="r"> <span>Red</span></label></li>
-                  <li><label><input type="radio" name="colour" value="w"> <span>White</span></label></li>
-                  <li><label><input type="radio" name="colour" value="b"> <span>Blue</span></label></li>
-                </ul>
-              </fieldset>
+  <article class=" shoe fou" id="product">
+    <img src="img/pine-green.jpg" alt="Product Image" class="shoes">
+    <h2>Air Jordan 1 Retro High Pine Green</h2>
+    <h3 id="price">$401.00</h3>
+      <p id="description"> The Air Jordan 1 Retro High OG ‘Pine Green’ showcases a modified take on the silhouette’s classic ‘Black Toe’ design, first introduced to the world in 1985. The leather high-top employs a black and white color scheme with Pine Green accents on the heel, outsole and leather wings that wrap around the collar. Unlike the original ‘Black Toe,’ the traditional white finish on the toe box is colored in with more Pine Green.</p>
+  </article>
 
-              <fieldset>
-                <legend>Sizes</legend>
-                <ol>
-                  <li><label><input type="radio" name="size" value="m"> <span>M</span></label></li>
-                  <li><label><input type="radio" name="size" value="l"> <span>L</span></label></li>
-                  <li><label><input type="radio" name="size" value="xl"> <span>XL</span></label></li>
-                </ol>
-              </fieldset>
+  <article class="shoe fiv" id="product">
+      <img src="img/rookie-of-the-year.jpg" alt="Product Image" class="shoes">
+      <h2>Air Jordan 1 Retro High Rookie Of The Year</h2>
+      <h3 id="price">$448.95</h3>
+      <p id="description">To celebrate, Jordan Brand released the Air Jordan 1 Retro High OG 'Rookie of the Year.' The high top features a white-based leather upper with perforations on the toe box for breathability and Gold Harvest leather overlays on the mudguard, ankle, eyestay, and heel. </p>
+  </article>
 
-              <footer>
-                <dl>
-                  <dt>Rating</dt>
-                  <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-                </dl>
-                <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-                <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-                <button type="button"><span class="material-icons">favorite</span></button>
-                <a href="#">see more</a>
-              </footer>
-            </form>
-          </article>
+  <article class="shoe six" id="products">
+      <img src="img/turbo-green.jpg" alt="Product Image" class="supreme">
+      <h2>Air Jordan 1 Retro High OG Turbo Green</h2>
+      <h3 id="price">$330.95</h3>
+      <p id="description">The Air Jordan 1 Retro High OG ‘Turbo Green’ complements the silhouette’s clean lines with a classic two-tone design. A textured white leather base is contrasted by soft suede overlays in Turbo Green. The latter design element is burnished to give off a vintage aesthetic, a quality that’s further enhanced by a midsole finished in off-white Sail. </p>
+  </article>
 
-          <!-- Product 2 -->
-          <article class="product">
-            <header>
-              <img src="img/product.jpg" alt="Product Image">
-            </header>
-            <h3>Product Name</h3>
-            <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-            <form>
-              <fieldset>
-                <legend>Colours</legend>
-                <ul>
-                  <li><label><input type="radio" name="colour" value="r"> <span>Red</span></label></li>
-                  <li><label><input type="radio" name="colour" value="w"> <span>White</span></label></li>
-                  <li><label><input type="radio" name="colour" value="b"> <span>Blue</span></label></li>
-                </ul>
-              </fieldset>
+    <article class="sup one" id="supreme-shirts">
+      <img src="img/box-logo.jpg" alt="Product Image" class="shoes">
+      <h2>Supreme 20th Anniversary Box Logo Tee White</h2>
+      <h3 id="price">$1224.00</h3>
+      <p id="description">The Supreme 20th Anniversary Box Logo Tee White is a must have for Supreme fanatics! With the
+        iconic plain white tee and red box logo embroidered onto the shirt isntead of it being painted on top. The
+        embroidery will surely last longer than the painted version, which is worth your money! </p>
+    </article>
 
-              <fieldset>
-                <legend>Sizes</legend>
-                <ol>
-                  <li><label><input type="radio" name="size" value="m"> <span>M</span></label></li>
-                  <li><label><input type="radio" name="size" value="l"> <span>L</span></label></li>
-                  <li><label><input type="radio" name="size" value="xl"> <span>XL</span></label></li>
-                </ol>
-              </fieldset>
+    <article class="sup two" id="supreme-shirts">
+      <img src="img/brooklyn-logo.jpg" alt="Product Image" class="shoes">
+      <h2>Supreme Brooklyn Tee</h2>
+      <h3 id="price">$770.00</h3>
+      <p id="description">Now, we give you an official look at the Brooklyn bogo tee straight from the actual BK store.
+        The shirt comes in a white base and features the box logo in black/yellow camo pattern. At the back, the phone
+        number of the shop is emblazoned.</p>
+    </article>
 
-              <footer>
-                <dl>
-                  <dt>Rating</dt>
-                  <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-                </dl>
-                <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-                <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-                <button type="button"><span class="material-icons">favorite</span></button>
-                <a href="#">see more</a>
-              </footer>
-            </form>
-          </article>
+    <article class="sup three" id="supreme-shirts">
+      <img src="img/paris-box-logo.jpg" alt="Product Image" class="shoes">
+      <h2>Supreme Paris</h2>
+      <h3 id="price">$1,170.00</h3>
+      <p id="description">The design of the Supreme Paris box logo tee features the iconic Supreme box logo in black
+        with white text, while the back reads ‘Bonjour Madame’ above the store’s opening date, 10-3-2016.</p>
+    </article>
 
-          <!-- Product 3 -->
-          <article class="product">
-            <header>
-              <img src="img/product.jpg" alt="Product Image">
-            </header>
-            <h3>Product Name</h3>
-            <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-            <form>
-              <fieldset>
-                <legend>Colours</legend>
-                <ul>
-                  <li><label><input type="radio" name="colour" value="r"> <span>Red</span></label></li>
-                  <li><label><input type="radio" name="colour" value="w"> <span>White</span></label></li>
-                  <li><label><input type="radio" name="colour" value="b"> <span>Blue</span></label></li>
-                </ul>
-              </fieldset>
+    <article class="sup four" id="supreme-shirts">
+      <img src="img/doughnut-joe.jpg" alt="Product Image" class="shoes">
+      <h2>Supreme Doughnut Joe</h2>
+      <h3 id="price">$2,100.00</h3>
+      <p id="description">The design of the Supreme Doughnut Joe Box Logo T-Shirt is a one of a kind shirt that gives
+        homage to the iconic Joe's Doughnut's doughnut store in the 1970s.</p>
+    </article>
 
-              <fieldset>
-                <legend>Sizes</legend>
-                <ol>
-                  <li><label><input type="radio" name="size" value="m"> <span>M</span></label></li>
-                  <li><label><input type="radio" name="size" value="l"> <span>L</span></label></li>
-                  <li><label><input type="radio" name="size" value="xl"> <span>XL</span></label></li>
-                </ol>
-              </fieldset>
+    <article class="sup five" id="supreme-shirts">
+      <img src="img/arch-ss-top.jpg" alt="Product Image" class="shoes">
+      <h2>Supreme Arch SS</h2>
+      <h3 id="price">$160.00</h3>
+      <p id="description">The Supereme Arch SS shirt is one of the shirts Supreme has dropped that doesn't follow it's
+        classic colour + logo box design. Sporting an arched Times New Romans font, coming in different colours, it's no
+        surprise that it is completely sold out as soon as it was released.</p>
+    </article>
 
-              <footer>
-                <dl>
-                  <dt>Rating</dt>
-                  <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-                </dl>
-                <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-                <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-                <button type="button"><span class="material-icons">favorite</span></button>
-                <a href="#">see more</a>
-              </footer>
-            </form>
-          </article>
-    
-          <!-- Product 4 -->
-          <article class="product">
-            <header>
-              <img src="img/product.jpg" alt="Product Image">
-            </header>
-            <h3>Product Name</h3>
-            <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-            <form>
-              <fieldset>
-                <legend>Colours</legend>
-                <ul>
-                  <li><label><input type="radio" name="colour" value="r"> <span>Red</span></label></li>
-                  <li><label><input type="radio" name="colour" value="w"> <span>White</span></label></li>
-                  <li><label><input type="radio" name="colour" value="b"> <span>Blue</span></label></li>
-                </ul>
-              </fieldset>
+    <article class="sup six" id="supreme-shirts">
+      <img src="img/white-banner.jpg" alt="Product Image" class="shoes">
+      <h2>Supreme White Banner</h2>
+      <h3 id="price">$91.00</h3>
+      <p id="description">Released as a part of Supreme's Fall/ Winter 2019 Week 1 drop, the Supreme Banner tee sold out
+        in a near instant. The tees dropped in nine different colorways and all feature the same graphic image, a
+        landscape photograph of Supreme's original store banner. The Supreme Banner Tee released on August 22nd, 2019
+        and retailed for $38 USD.</p>
+    </article>
 
-              <fieldset>
-                <legend>Sizes</legend>
-                <ol>
-                  <li><label><input type="radio" name="size" value="m"> <span>M</span></label></li>
-                  <li><label><input type="radio" name="size" value="l"> <span>L</span></label></li>
-                  <li><label><input type="radio" name="size" value="xl"> <span>XL</span></label></li>
-                </ol>
-              </fieldset>
+    <article class="sup sev" id="supreme-shirts">
+      <img src="img/nasty-nas.jpg" alt="Product Image" class="shoes">
+      <h2>Nas x Supreme</h2>
+      <h3 id="price">$99.00</h3>
+      <p id="description">The Nas T-shirts came in various colors but the black option sold out the fastest, clocking in
+        at 37 seconds. The brown and heather grey followed at just around the minute mark while the pale blue, lime
+        green, and red exited shopping carts just a few seconds after.</p>
+    </article>
 
-              <footer>
-                <dl>
-                  <dt>Rating</dt>
-                  <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-                </dl>
-                <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-                <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-                <button type="button"><span class="material-icons">favorite</span></button>
-                <a href="#">see more</a>
-              </footer>
-            </form>
-          </article>
+    <article class="sup eig" id="supreme-shirts">
+      <img src="img/swarovski.jpg" alt="Product Image" class="shoes">
+      <h2>Swarovski x Supreme</h2>
+      <h3 id="price">$1,889.00</h3>
+      <p id="description">In April of 1994, Supreme New York first opened their doors in downtown Manhattan. April 2019
+        marks 25 years since, and in honor of that, Supreme released a special edition of their iconic box logo hooded
+        sweatshirt. Featuring a box logo made of Swarovski Crystals.</p>
+    </article>
 
-          <!-- Product 5 -->
-          <article class="product">
-            <header>
-              <img src="img/product.jpg" alt="Product Image">
-            </header>
-            <h3>Product Name</h3>
-            <p>Here is a shot of this product that might entice a user to click and add it to their cart.</p>
-            <form>
-              <fieldset>
-                <legend>Colours</legend>
-                <ul>
-                  <li><label><input type="radio" name="colour" value="r"> <span>Red</span></label></li>
-                  <li><label><input type="radio" name="colour" value="w"> <span>White</span></label></li>
-                  <li><label><input type="radio" name="colour" value="b"> <span>Blue</span></label></li>
-                </ul>
-              </fieldset>
+    <article class="sup nin" id="supreme-shirts">
+      <img src="img/virgil-abloh.jpg" alt="Product Image" class="shoes">
+      <h2>Supreme x Virgil Abloh</h2>
+      <h3 id="price">$998.00</h3>
+      <p id="description">The box logo does away with the traditional block red background and switches it for red,
+        black, and green. The colorway could be a reinterpretation of the pan-African flag, which has the same colors in
+        the same order, albeit in horizontal stripes rather than vertical.</p>
+    </article>
 
-              <fieldset>
-                <legend>Sizes</legend>
-                <ol>
-                  <li><label><input type="radio" name="size" value="m"> <span>M</span></label></li>
-                  <li><label><input type="radio" name="size" value="l"> <span>L</span></label></li>
-                  <li><label><input type="radio" name="size" value="xl"> <span>XL</span></label></li>
-                </ol>
-              </fieldset>
+    <article class="sup ten" id="supreme-shirts">
+      <img src="img/supreme-orange.jpg" alt="Product Image" class="shoes">
+      <h2>Supreme Mandarin Orange</h2>
+      <h3 id="price">$78.00</h3>
+      <p id="description">Supreme's Manadarin Orange Tee was one of two tees released in Week 6 that referenced other
+        items dropped earlier in the Spring/Summer 19 season. The tee presents a far more financially viable option for
+        all those Supreme fans out there. Supreme's Manadarin Orange Tee released on April 4th, 2019 and retailed at $38
+        USD.</p>
+    </article>
 
-              <footer>
-                <dl>
-                  <dt>Rating</dt>
-                  <dd>4.4 <span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star_half</span></dd>
-                </dl>
-                <data value="39"><del>$50.00</del> <ins>$39.00</ins></data>
-                <button type="button"><span class="material-icons">add_shopping_cart</span> Add to Cart</button>
-                <button type="button"><span class="material-icons">favorite</span></button>
-                <a href="#">see more</a>
-              </footer>
-            </form>
-          </article>
-        </div>
-      </section>
+    <article class="sup ele" id="supreme-shirts">
+      <img src="img/supreme-red.jpg" alt="Product Image" class="shoes">
+      <h2>Supreme 20th Anniversary (Red)</h2>
+      <h3 id="price">$1,134.00</h3>
+      <p id="description">One of the many colours the Supreme 20th Anniversary edition shirts. Similar to the classic
+        red that Supreme uses, except it's shade is more of a maroon and the box logo still sporting tne infamous box
+        logo.</p>
+    </article>
 
-      <footer>
-        <p>1-5 of 20 products found</p>
-        <nav aria-label="Product Pages">
-          <a href="#" aria-label="Previous page">prev</a>
-          <ol>
-            <li><a href="#" aria-label="Current Page, Page 1" aria-current="true">1</a></li>
-            <li><a href="#" aria-label="Page 2">2</a></li>
-            <li><a href="#" aria-label="Page 3">3</a></li>
-            <li><a href="#" aria-label="Page 4">4</a></li>
-          </ol>
-          <a href="#" aria-label="Next page">next</a>
-        </nav>
-      </footer>
-    </main>
+    <article class="sup twe" id="supreme-shirts">
+      <img src="img/san-francisco.jpeg" alt="Product Image" class="shoes">
+      <h2>Supreme San Francisco</h2>
+      <h3 id="price">$584.00</h3>
+      <p id="description">This shirt was a very big deal in the Supreme community. When James Jebbia decided to open a
+        store in San Francisco, he also decided to design a shirt which was unique to San Francisco.</p>
+    </article>
 
-    <footer>
-      <p>&copy; Copyright, 1991.</p>
-      <nav aria-label="Legal">
-        <ul>
-          <li><a href="#">Terms of Use</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Accessibility Policy</a></li>
-        </ul>
-      </nav>
-      <ul>
-        <li><a href="#"><span class="material-icons">face</span> Facebook</a></li>
-        <li><a href="#"><span class="material-icons">camera_alt</span> Instagram</a></li>
-        <li><a href="#"><span class="material-icons">alternate_email</span> Twitter</a></li>
-      </ul>
-    </footer>
+    <article class="sup thirt" id="supreme-shirts">
+      <img src="img/heroines-tee.jpg" alt="Product Image" class="shoes">
+      <h2>Supreme Heroines</h2>
+      <h3 id="price">$75.00</h3>
+      <p id="description">After releasing two major collaborations in a row for weeks 5 and 6, Supreme kept things
+        in-house for their Week 7 release of the FW19 season which featured their second set of fall tees. Released as a
+        part of the tee drop was the Supreme Heroines Tee in six colors. The Heroines Tee comes as a result of the
+        continued release of items featuring the artwork of Hungarian artist, Rita Ackermann, and features the same
+        artwork as the previously released Rita Ackermann Rayon Shirt. </p>
+    </article>
 
-    <script src="js/index.js"></script>
-  </body>
-</html>
+    <article class="sup fourt" id="supreme-shirts">
+      <img src="img/gonz-tee.jpg" alt="Product Image" class="shoes">
+      <h2>Supreme Gonz</h2>
+      <h3 id="price">$166.00</h3>
+      <p id="description">The Gonz’s affiliation with Supreme goes way back to the stores beginning on Lafayette Street,
+        NYC. Whenever overseas on skate trips, Mark would often send postcards to the late Harold Hunter and the rest of
+        the crew at “Supream” (his misspelling), featuring his own doodles and musings, some of which would later make
+        it on to items of clothing from the brand. The Gonz provided early artwork for the walls of the Lafayette Street
+        store and continues to work with Supreme on art installations for their stores in London (Shmoo sculptures),
+        Shibuya (Schminx sculpture), Paris (Priest sculpture) and Brooklyn (wall mural).</p>
+    </article>
+  </main>
+-->
+
+
+  <footer>
+    <span class="terms">
+      <a href="/terms-of-service/" class="terms-con">Terms &amp; Conditions</a> &nbsp;|&nbsp;
+      <a href="/privacy/" class="privacypol">Privacy Policy</a> &nbsp;|&nbsp;
+
+    </span>
+
+    <span class="copyright">
+      Site &#169; 1999 all rights reserved
+    </span> &nbsp;|&nbsp;
+
+    <span class="socials">
+      <a href="www.instagram.com" class="insta">INSTAGRAM</a> &nbsp;|&nbsp;
+      <a href="www.facebook.com" class="faceb">FACEBOOK</a> &nbsp;|&nbsp;
+      <a href="www.twitter.com" class="twt">TWITTER</a>
+
+    </span>
+  </footer>
+  <script src="js/zeroo.js"></script>
+</body>
