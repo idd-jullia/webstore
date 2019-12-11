@@ -122,6 +122,14 @@ footer a {
   clear:both; 
 }
 
+.btn-view {
+  display: none;
+}
+
+@media screen and (min-width: 50em) {
+  .btn-view: inline-block;
+}
+
 /*
 .terms  {
 }
