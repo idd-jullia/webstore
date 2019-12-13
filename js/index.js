@@ -189,7 +189,7 @@ function getProductAsHtmlString (prod)  {
   </article>`;
 }
 
-function isMatchingName(product) {
+function isMatchingName(event) {
   // Trim the input of white space, then uppercase it, then check if it's included
   if (product.name.toUpperCase().includes(this.trim().toUpperCase())) {
     return true;
@@ -198,7 +198,6 @@ function isMatchingName(product) {
   }
 
 }
-
 
 function renderProducts(arr) {
   document.getElementById('products').innerHTML = arr.map(getProductAsHtmlString).join('');
