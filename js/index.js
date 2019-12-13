@@ -172,4 +172,13 @@ function renderProducts(arr) {
   document.getElementById('products').innerHTML = arr.map(getProductAsHtmlString).join('');
 }
 
+
 renderProducts(products);
+
+function loadProductByName(event) {
+  const nameImSearchingFor = event.target.value; 
+  renderProducts(products.filter(isMatchingName, nameImSearchingFor));
+}
+
+
+document.getElementById('products').addEventListener('input', loadProductByName);
